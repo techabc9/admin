@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+body, input, button, select, textarea { font-family:"Malgun Gothic", dotum, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size:13px }
+form { margin:0; }
+textarea{word-wrap:break-word; word-break:break-all;}
+.u_admin table thead th { background:#f9f9f9;}
+.u_admin table th, .u_admin table td{ vertical-align:middle; word-wrap:break-word; word-break:break-all;}
+.u_login_page { background:#f5f5f5 }
+.u_login { padding-top:100px }
+.u_login .u_tit { font-size:30px; margin-bottom:30px }
+.u_login_bx { width:400px; margin:0 auto; padding:19px 29px 29px; background:#fff; border: 1px solid #e5e5e5; border-radius: 5px; box-shadow: 0 1px 2px rgba(0, 0, 0, .05); }
+.u_login_bx .form-horizontal .control-label { text-align:left }
+.u_admin { padding-top:60px }
+.u_admin_area { padding:29px 19px 19px; border:1px solid #ddd; border-radius: 4px; }
+.navbar .u_tx { color:#fff; font-size:12px; display:inline-block; line-height:30px; vertical-align:top; margin:6px 5px 0 0 }
