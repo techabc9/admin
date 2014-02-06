@@ -13,3 +13,4 @@ textarea{word-wrap:break-word; word-break:break-all;}
 .u_admin { padding-top:60px }
 .u_admin_area { padding:29px 19px 19px; border:1px solid #ddd; border-radius: 4px; }
 .navbar .u_tx { color:#fff; font-size:12px; display:inline-block; line-height:30px; vertical-align:top; margin:6px 5px 0 0 }
+.navbar .brand { font-family:Verdana; letter-spacing:-1px}
