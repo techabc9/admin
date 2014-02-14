@@ -1,0 +1,745 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="initial-scale=1.0">
+<title>Restylane Admin</title>
+<link href="../css/bootstrap.css" rel="stylesheet" media="screen">
+<link href="../css/admin.css" rel="stylesheet" media="screen">
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/admin.js"></script>
+<!--[if lt IE 9]>
+	<script src="../js/html5shiv.js"></script>	
+<![endif]-->
+</head>
+
+<body class="u_admin_page">
+<!-- gnb -->
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container"> <a class="brand" href="list.html">Restylane Admin</a>
+            <ul class="nav">
+            <li class="active"><a href="list.html">Branch Manage</a></li>
+            <li class="dropdown"> <a href="write.html" class="dropdown-toggle" data-toggle="dropdown">Restylane Contents Manage <b class="caret"></b></a>
+                <ul class="dropdown-menu span3">
+                <li><a href="write.html">Company</a></li>
+                <li><a href="concept_clinic.html">Concept Clinic</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Data Room</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents Manage <b class="caret"></b></a>
+                <ul class="dropdown-menu span3">
+                <li><a href="gnb.html">GNB</a></li>
+                <li><a href="#">FAQ</a></li>
+                </ul>
+            </li>
+            </ul>
+            <form action="login.html" class="navbar-form pull-right">
+                <span class="u_tx">접속 계정 : <span>resylane super admin</span></span>
+                <button type="submit" class="btn">Logout</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- //gnb --> 
+<!-- u_admin -->
+<div class="u_admin">
+    <div class="container">
+        <div class="u_admin_area">
+        	<!-- content -->
+            <h2>All template</h2>
+            
+            <style>
+				.well {background: #fff}
+			</style>
+
+			<h3>Alignment classes</h3>
+			<div class="well">
+				<p class="text-left">
+					Left aligned text.
+				</p>
+				<p class="text-center">
+					Center aligned text.
+				</p>
+				<p class="text-right">
+					Right aligned text.
+				</p>
+				<div class="text-left">
+					Left aligned text.
+				</div>
+				<div class="text-center">
+					Center aligned text.
+				</div>
+				<div class="text-right">
+					Right aligned text.
+				</div>
+			</div>
+
+			<h3>Emphasis classes</h3>
+			<div class="well">
+				<p class="muted">
+					Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.
+				</p>
+				<p class="text-warning">
+					Etiam porta sem malesuada magna mollis euismod.
+				</p>
+				<p class="text-error">
+					Donec ullamcorper nulla non metus auctor fringilla.
+				</p>
+				<p class="text-info">
+					Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.
+				</p>
+				<p class="text-success">
+					Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+				</p>
+			</div>
+
+			<h3>Tables</h3>
+			<div class="well">
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>First Name</th>
+							<th>Last Name</th>
+							<th>Username</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="2">1</td>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@TwBootstrap</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td colspan="2">Larry the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table class="table table-bordered table-hover">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>First Name</th>
+							<th>Last Name</th>
+							<th>Username</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="2">1</td>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@TwBootstrap</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td colspan="2">Larry the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table class="table table-bordered table-hover">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>First Name</th>
+							<th>Last Name</th>
+							<th>Username</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="success">
+							<td rowspan="2">1</td>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr class="success">
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@TwBootstrap</td>
+						</tr>
+						<tr class="error">
+							<td>2</td>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr class="warning">
+							<td>3</td>
+							<td colspan="2">Larry the Bird</td>
+							<td>@twitter</td>
+						</tr>
+						<tr class="info">
+							<td>4</td>
+							<td colspan="2">Larry the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</div>
+
+			
+			<h3>Inputs</h3>
+			<div class="well">
+				<form>
+					<input type="text" placeholder="Text input">
+					<br>
+					<input type="text" placeholder="Text input readonly" readonly="readonly">
+					<br>
+					<input type="text" placeholder="Text input disable" disabled="disabled">
+					<br>
+					<input class="span1" type="text" placeholder=".span1">
+					<input class="span2" type="text" placeholder=".span2">
+					<input class="span3" type="text" placeholder=".span3">
+					<input class="span4" type="text" placeholder=".span4">
+					<input class="span5" type="text" placeholder=".span5">
+					<input class="span6" type="text" placeholder=".span6">
+					<input class="span7" type="text" placeholder=".span7">
+					<input class="span8" type="text" placeholder=".span8">
+					<input class="span9" type="text" placeholder=".span9">
+					<input class="span10" type="text" placeholder=".span10">
+					<input class="span11" type="text" placeholder=".span11">
+					<br>
+					<input class="input-mini" type="text" placeholder=".input-mini">
+					<input class="input-small" type="text" placeholder=".input-small">
+					<input class="input-medium" type="text" placeholder=".input-medium">
+					<input class="input-large" type="text" placeholder=".input-large">
+					<input class="input-xlarge" type="text" placeholder=".input-xlarge">
+					<input class="input-xxlarge" type="text" placeholder=".input-xxlarge">
+					<input class="input-block-level" type="text" placeholder=".input-block-level">
+				</form>
+			</div>
+
+			<h3>Textarea</h3>
+			<div class="well">
+				<form>
+					<textarea rows="3"></textarea>
+					<br>
+					<textarea rows="3" class="span6"></textarea>
+					<br>
+					<textarea rows="3" class="input-block-level"></textarea>
+				</form>
+			</div>
+
+			<h3>Checkboxes and radios</h3>
+			<div class="well">
+				<form>
+					<label class="checkbox">
+						<input type="checkbox" value="">
+						Option one is this and that—be sure to include why it's great
+					</label>
+
+					<label class="radio">
+						<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+						Option one is this and that—be sure to include why it's great 
+					</label>
+					<label class="radio">
+						<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+						Option two can be something else and selecting it will deselect option one 
+					</label>
+
+					<label class="checkbox inline">
+						<input type="checkbox" id="inlineCheckbox1" value="option1">1 
+					</label>
+					<label class="checkbox inline">
+						<input type="checkbox" id="inlineCheckbox2" value="option2">2 
+					</label>
+					<label class="checkbox inline">
+						<input type="checkbox" id="inlineCheckbox3" value="option3" disabled="disabled">3 
+					</label>
+					<br>
+
+					<label class="radio inline">
+						<input type="radio" name="inlineRadios" id="inlineRadios1" value="option1" checked>1 
+					</label>
+					<label class="radio inline">
+						<input type="radio" name="inlineRadios" id="inlineRadios2" value="option">2 
+					</label>
+					<label class="radio inline">
+						<input type="radio" name="inlineRadios" id="inlineRadios3" value="option" disabled="disabled">3 
+					</label>
+				</form>
+			</div>
+
+			<h3>Selects</h3>
+			<div class="well">
+				<form>
+					<select>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+					<br>
+
+					<select disabled="disabled">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+					<br>
+
+					<select multiple="multiple">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+					<br>
+
+					<select class="span1">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+
+					<select class="span2">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+
+					<select class="span3">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+				</form>
+			</div>
+
+			<h3>appended inputs</h3>
+			<div class="well">
+				<form>
+					<div class="input-append">
+						<input class="span2" id="appendedInputButton" type="text">
+						<button class="btn" type="button">Go!</button>
+					</div>
+					<br>
+
+					<div class="input-append">
+						<input class="span2" id="appendedDropdownButton" type="text">
+						<div class="btn-group">
+							<button class="btn dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Action</a>
+								</li>
+								<li>
+									<a href="#">Another action</a>
+								</li>
+								<li>
+									<a href="#">Something else here</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="#">Separated link</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<h3>Help text</h3>
+			<div class="well">
+				<div class="form-inline">
+					<input type="text">
+					<span class="help-inline">Inline help text</span>
+					<br>
+					<br>
+					<input type="text">
+					<span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+				</div>
+			</div>
+
+			<h3>Button</h3>
+			<div class="well">
+				<table class="table table-bordered table-striped">
+					<thead>
+						<tr>
+							<th>Button</th>
+							<th>class=""</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<button type="button" class="btn">Default</button>
+							</td>
+							<td>
+							<code>
+								btn
+							</code></td>
+							<td>Standard gray button with gradient</td>
+						</tr>
+						<tr>
+							<td>
+								<button type="button" class="btn btn-primary">Primary</button>
+							</td>
+							<td>
+							<code>
+								btn btn-primary
+							</code></td>
+							<td>Provides extra visual weight and identifies the primary action in a set of buttons</td>
+						</tr>
+						<tr>
+							<td>
+								<button type="button" class="btn btn-info">Info</button>
+							</td>
+							<td>
+							<code>
+								btn btn-info
+							</code></td>
+							<td>Used as an alternative to the default styles</td>
+						</tr>
+						<tr>
+							<td>
+								<button type="button" class="btn btn-success">Success</button>
+							</td>
+							<td>
+							<code>
+								btn btn-success
+							</code></td>
+							<td>Indicates a successful or positive action</td>
+						</tr>
+						<tr>
+							<td>
+								<button type="button" class="btn btn-warning">Warning</button>
+							</td>
+							<td>
+							<code>
+								btn btn-warning
+							</code></td>
+							<td>Indicates caution should be taken with this action</td>
+						</tr>
+						<tr>
+							<td>
+								<button type="button" class="btn btn-danger">Danger</button>
+							</td>
+							<td>
+							<code>
+								btn btn-danger
+							</code></td>
+							<td>Indicates a dangerous or potentially negative action</td>
+						</tr>
+						<tr>
+							<td>
+								<button type="button" class="btn btn-inverse">Inverse</button>
+							</td>
+							<td>
+							<code>
+								btn btn-inverse
+							</code></td>
+							<td>Alternate dark gray button, not tied to a semantic action or use</td>
+						</tr>
+					</tbody>
+				</table>
+					
+				<p>
+					<button class="btn btn-large btn-primary" type="button">Large button</button>
+					<button class="btn btn-large" type="button">Large button</button>
+				</p>
+				<p>
+					<button class="btn btn-primary" type="button">Default button</button>
+					<button class="btn" type="button">Default button</button>
+				</p>
+				<p>
+					<button class="btn btn-small btn-primary" type="button">Small button</button>
+					<button class="btn btn-small" type="button">Small button</button>
+				</p>
+				<p>
+					<button class="btn btn-mini btn-primary" type="button">Mini button</button>
+					<button class="btn btn-mini" type="button">Mini button</button>
+				</p>
+				
+				<p>
+					<button class="btn btn-primary" type="button" disabled="disabled">disabled</button>
+					<button class="btn" type="button" disabled="disabled">disabled</button>
+				</p>
+				
+				<p>
+					<a class="btn" href="">Link</a>
+					<button class="btn" type="submit">Button</button>
+					<input class="btn" type="button" value="Input">
+					<input class="btn" type="submit" value="Submit">
+				</p>
+
+			</div>
+
+			<h3>Input File</h3>
+			<div class="well">
+				<div class="u_file_area">
+					<input type="file" class="u_file btn" />
+					<div class="u_file_fake">
+						<button type="button" class="btn btn-inverse">찾아보기</button>
+					</div>
+				</div>
+			</div>
+			
+			<h3>Search form</h3>
+			<div class="well">
+				<form class="form-search">
+					<input type="text" class="input-medium search-query">
+					<button type="submit" class="btn">Search</button>
+					<br>
+					<br>
+					<div class="input-append">
+						<input type="text" class="span2 search-query">
+						<button type="submit" class="btn">Search</button>
+					</div>
+				</form>
+			</div>
+
+			<h3>Inline form</h3>
+			<div class="well">
+				<form class="form-inline">
+					<input type="text" class="input-small" placeholder="Email">
+					<input type="password" class="input-small" placeholder="Password">
+					<label class="checkbox">
+						<input type="checkbox">
+						Remember me 
+					</label>
+					<button type="submit" class="btn">Sign in</button>
+				</form>
+			</div>
+
+			
+			<h3>Table in Forms</h3>
+			<div class="well">
+				<form>
+					<table class="table table-bordered">
+	                <tbody>
+	                <tr>
+	                    <td>input text</td>
+	                    <td class="form-inline"><input type="text" class="input-block-level"></td>
+	                </tr>
+	                <tr>
+	                    <td>input text</td>
+	                    <td class="form-inline"><input type="text"> <input type="text"> <input type="text"></td>
+	                </tr>
+	                <tr>
+	                    <td>input text</td>
+	                    <td class="form-inline"><input class="span1" type="text" placeholder=".span1"> - 
+	                    	<input class="span1" type="text" placeholder=".span1"> - 
+	                    	<select class="span1">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</td>
+	                </tr>
+	                <tr>
+	                    <td>Textarea</td>
+	                    <td class="form-inline"><textarea rows="3" class="input-block-level"></textarea></td>
+	                </tr>
+	                <tr>
+	                    <td>Help text</td>
+	                    <td class="form-inline">
+	                    	<input type="text">
+							<span class="help-inline">Inline help text</span>
+	                    </td>
+	                </tr>
+	                <tr>
+	                    <td>Help text</td>
+	                    <td class="form-inline">
+	                    	<input type="text">
+							<span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+	                    </td>
+	                </tr>
+	                <tr>
+	                    <td>Default button</td>
+	                    <td class="form-inline">
+	                    	<button class="btn btn-primary" type="button">Default button</button>
+							<button class="btn" type="button">Default button</button>
+	                    </td>
+	                </tr>
+	                <tr>
+	                    <td>Input File</td>
+	                    <td class="form-inline">
+	                    	<div class="u_file_area">
+								<input type="file" class="u_file btn" />
+								<div class="u_file_fake">
+									<button type="button" class="btn">찾아보기</button>
+								</div>
+							</div>
+							
+							<div class="u_file_area">
+								<input type="file" class="u_file btn" />
+								<div class="u_file_fake">
+									<button type="button" class="btn btn-inverse">찾아보기</button>
+								</div>
+							</div>
+	                    </td>
+	                </tr>
+	                <tr>
+	                    <td>A Tag Button Style</td>
+	                    <td class="form-inline">
+	                    	<a class="btn btn-primary" href="">a tag button</a>
+                			<a class="btn" href="">a tag button</a>
+	                    </td>
+	                </tr>
+	                </tbody>
+	                </table>
+	                <div class="text-center">
+		                <div class="input-append">
+	                        <input type="text">
+	                        <button type="button" class="btn btn-primary">검색</button>
+	                    </div>
+		            </div>
+                	<div class="pagination pagination-centered">
+		                <ul>
+		                <li><a href="#">«</a></li>
+		                <li class="active"><a href="#">1</a></li>
+		                <li><a href="#">2</a></li>
+		                <li><a href="#">3</a></li>
+		                <li><a href="#">4</a></li>
+		                <li><a href="#">5</a></li>
+		                <li><a href="#">»</a></li>
+		                </ul>
+		            </div>
+		            
+                	<div class="text-center">
+	                    <button type="submit" class="btn btn-primary">전송</button>
+	                    <button type="reset" class="btn">다시쓰기</button>
+	                </div>
+	                
+	                <div class="text-left">
+	                    <button type="submit" class="btn btn-primary">전송</button>
+	                    <button type="reset" class="btn">다시쓰기</button>
+	                </div>
+	                
+	                <div class="text-right">
+	                    <button type="submit" class="btn btn-primary">전송</button>
+	                    <button type="reset" class="btn">다시쓰기</button>
+	                </div>
+                	
+                	<div class="text-center">
+                		<a class="btn btn-primary" href="">a tag button</a>
+                		<a class="btn" href="">a tag button</a>
+	                </div>
+	                
+                </form>
+			</div>
+
+			<h3>Tab</h3>
+			<div class="well">
+				<div class="tabbable">
+				  <ul class="nav nav-tabs">
+				    <li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+				    <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+				  </ul>
+				  <div class="tab-content">
+				    <div class="tab-pane active" id="tab1">
+				      <p>I'm in Section 1.</p>
+				    </div>
+				    <div class="tab-pane" id="tab2">
+				      <p>Howdy, I'm in Section 2.</p>
+				    </div>
+				  </div>
+				</div>
+			</div>
+
+			<h3>Breadcrumbs</h3>
+			<div class="well">
+				<ul class="breadcrumb">
+				  <li><a href="#">Home</a> <span class="divider">/</span></li>
+				  <li><a href="#">Library</a> <span class="divider">/</span></li>
+				  <li class="active">Data</li>
+				</ul>
+			</div>
+
+			<h3>Collapse</h3>
+			<div class="well">
+				<div class="accordion" id="accordion2">
+	                <div class="accordion-group">
+	                  <div class="accordion-heading">
+	                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+	                      Collapsible Group Item #1
+	                    </a>
+	                  </div>
+	                  <div id="collapseOne" class="accordion-body collapse in">
+	                    <div class="accordion-inner">
+	                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+	                    </div>
+	                  </div>
+	                </div>
+	                <div class="accordion-group">
+	                  <div class="accordion-heading">
+	                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+	                      Collapsible Group Item #2
+	                    </a>
+	                  </div>
+	                  <div id="collapseTwo" class="accordion-body collapse">
+	                    <div class="accordion-inner">
+	                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+	                    </div>
+	                  </div>
+	                </div>
+	                <div class="accordion-group">
+	                  <div class="accordion-heading">
+	                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+	                      Collapsible Group Item #3
+	                    </a>
+	                  </div>
+	                  <div id="collapseThree" class="accordion-body collapse">
+	                    <div class="accordion-inner">
+	                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+	                    </div>
+	                  </div>
+	                </div>
+	              </div>
+			</div>
+			
+            <!-- //content -->
+        </div>
+    </div>
+</div>
+<!-- //u_admin -->
+</body>
+</html>
